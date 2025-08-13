@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">音量面板</string>
+    <string name="tile_volume_label">音量控制</string>
+</resources>
