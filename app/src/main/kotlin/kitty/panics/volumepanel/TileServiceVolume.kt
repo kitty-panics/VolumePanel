@@ -15,7 +15,7 @@ class TileServiceVolume : TileService() {
     override fun onClick() {
         super.onClick()
 
-        // 在某些系统中 (一加 13-ColorOS 15.0-A15)，startActivityAndCollapse 无法正确折叠 "快速设置"，
+        // 在某些系统中 (e.g. 一加 13-ColorOS 15.0-A15)，startActivityAndCollapse 无法正确折叠 "快速设置"，
         // 转而使用 showDialog 弹出一个对话框，这应该能实现强制折叠。
         // Link: https://developer.android.com/reference/android/service/quicksettings/TileService
         val dialog = Dialog(applicationContext)
@@ -43,5 +43,4 @@ class TileServiceVolume : TileService() {
             )
         }
     }
-
 }
